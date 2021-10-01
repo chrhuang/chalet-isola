@@ -1,0 +1,2 @@
+module ChaletHelper
+end

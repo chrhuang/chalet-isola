@@ -1,34 +1,17 @@
-<div class="fixed-top" id="navbar">
+<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Chalet Isola</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Galerie</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tarif</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Réservation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-          <span class="navbar-text">
-            <a href="mailto:laurent.porchet@orange.fr">laurent.porchet@orange.fr</a>
-          </span>
-        </div>
+    <div class="d-flex justify-content-between w-100">
+      <div class="d-flex">
+        <%= link_to "Chalet Isola", root_path, class: "navbar-brand" %>
+        <%= link_to "Accueil", root_path, class: "nav-link text-body" %>
+        <%= link_to "Galeries", galeries_path, class: "nav-link text-body" %>
+        <%= link_to "Tarif", tarif_path, class: "nav-link text-body" %>
+        <%# <%= link_to "Reservation", root_path, class: "nav-link text-body" %>
+        <a class="nav-link text-body" href="#contact">Contact</a>
       </div>
-    </nav>
+      <div>
+        <%= mail_to "laurent.porchet@orange.fr", "laurent.porchet@orange.fr", class: "nav-link ms-auto text-body" %>
+      </div>
+    </div>
   </div>
-</div>
+</nav>

@@ -1,6 +1,6 @@
 <div class="home">
   <div class="home-video-wrapper">
-    <%= cl_video_tag "ffqooghvnopz29tetf2n", autoplay: true, loop: true, muted: true, controls: false, class: "home_video" %>
+    <%= cl_video_tag "mountains_jixeux", autoplay: true, loop: true, muted: true, controls: false, class: "home_video" %>
     <div class="m-auto text-white text-center">
       <h1>Chalet Isola</h1>
       <p>Réservez aujourd'hui votre hebergement aux pieds des pistes de ski</p>
@@ -12,10 +12,10 @@
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet leo quis risus hendrerit imperdiet. In hac habitasse platea dictumst. Maecenas id ante erat. Phasellus at ex sed purus mattis fermentum congue eget enim. Duis egestas posuere arcu, ac porta urna aliquet id. Curabitur eleifend diam ac nisi commodo volutpat. Phasellus nec lectus in augue maximus consectetur. Nam eleifend mi lectus, et eleifend nibh rhoncus et. Cras at pellentesque quam, vel lobortis dui. Donec sit amet eros eu eros tempus rutrum.
       </p>
-      <button class="mt-5 btn btn-lg">Voir les photos</button>
+      <%= link_to "Voir les photos", galeries_path, class: "mt-5 btn btn-lg" %>
     </div>
   </div>
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "snow2_z34c55" %>')">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path "snow2_xgglxy" %>')">
     <div class="container h-100">
       <div class="d-flex flex-column justify-content-center h-100">
         <h2>Isola 2000</h2>
